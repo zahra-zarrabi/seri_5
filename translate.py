@@ -38,7 +38,7 @@ def new_word():
     else:
         user_persian=input('Enter the translation')
         words.append({'english':user_english,'persian':user_persian})
-        f=open('seri_5/translate.txt','a')
+        f=open('translate.txt','a')
         f.write('\n'+user_english+'\n'+user_persian)
         print('Word was added to the word bank.')
 
@@ -60,7 +60,7 @@ def menu():
 
 
 try:
-    f=open('seri_5/translate.txt')
+    f=open('translate.txt')
 except:
     print('Error!')
 
